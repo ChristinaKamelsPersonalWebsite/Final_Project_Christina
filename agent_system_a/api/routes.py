@@ -4,6 +4,7 @@ import asyncio
 import json
 import traceback
 
+import redis as redis_lib
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 
@@ -20,7 +21,49 @@ from agent_system_a.tools.mcp_client import (
 
 router = APIRouter()
 graph = build_graph()
+settings = get_settings()
 
+# ── Redis conversation history ────────────────────────────────────────────────
+
+def _get_redis():
+    try:
+        r = redis_lib.from_url(settings.redis_url, decode_responses=True)
+        r.ping()
+        return r
+    except Exception:
+        return None
+
+
+def _load_history(session_id: str) -> list[dict]:
+    if not session_id:
+        return []
+    r = _get_redis()
+    if not r:
+        return []
+    try:
+        raw = r.get(f"history:{session_id}")
+        if raw:
+            return json.loads(raw)
+    except Exception:
+        pass
+    return []
+
+
+def _save_history(session_id: str, history: list[dict]) -> None:
+    if not session_id:
+        return
+    r = _get_redis()
+    if not r:
+        return
+    try:
+        # Keep last 20 messages to avoid context overflow
+        history = history[-20:]
+        r.setex(f"history:{session_id}", 86400, json.dumps(history))  # 24h TTL
+    except Exception:
+        pass
+
+
+# ── Helper functions ──────────────────────────────────────────────────────────
 
 def _wants_progress_analysis(message: str) -> bool:
     m = message.lower()
@@ -43,6 +86,7 @@ def _wants_progress_analysis(message: str) -> bool:
         )
     )
 
+
 def _call_agent_b_progress(request: ChatRequest) -> tuple[str, str]:
     from agent_system_a.tools.progress_tool import WorkoutLog
     logs = [WorkoutLog(**log) for log in (request.progress_logs or [])]
@@ -53,12 +97,7 @@ def _call_agent_b_progress(request: ChatRequest) -> tuple[str, str]:
     return text, "progress_analysis"
 
 
-
 def _call_mcp_tools(request: ChatRequest) -> tuple[str, list[str]]:
-    """
-    Call MCP tools via the MCP client (replaces raw requests.post calls).
-    Each field is optional; only included fields are called.
-    """
     chunks: list[str] = []
     routes: list[str] = []
 
@@ -80,6 +119,8 @@ def _call_mcp_tools(request: ChatRequest) -> tuple[str, list[str]]:
     return "\n\n".join(chunks), routes
 
 
+# ── Chat endpoint ─────────────────────────────────────────────────────────────
+
 @router.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest) -> ChatResponse:
     message = request.message.strip()
@@ -95,6 +136,9 @@ async def chat(request: ChatRequest) -> ChatResponse:
                 session_id=request.session_id,
             )
 
+        # Load conversation history from Redis
+        history = _load_history(request.session_id)
+
         prefix_parts: list[str] = []
         route_tags: list[str] = []
 
@@ -102,21 +146,20 @@ async def chat(request: ChatRequest) -> ChatResponse:
             if request.progress_logs:
                 try:
                     b_text, b_route = _call_agent_b_progress(request)
-                    # Return immediately with just Agent B's response.
-                    # No need to run LangGraph when progress logs are provided.
+                    # Save to history
+                    history.append({"role": "user", "content": message})
+                    history.append({"role": "assistant", "content": b_text})
+                    _save_history(request.session_id, history)
                     return ChatResponse(
                         response=b_text,
                         route=b_route,
                         session_id=request.session_id,
                     )
                 except Exception as exc:
-                        prefix_parts.append(
+                    prefix_parts.append(
                         "Progress analysis unavailable: " + str(exc)
                     )
-                  
             else:
-                # No early return — LangGraph still runs for coaching advice.
-                # We just prepend a note asking the user to include logs next time.
                 prefix_parts.append(
                     "To get a full progress analysis, include `progress_logs` in your "
                     "request (date, exercise, weight, reps, sets). "
@@ -133,13 +176,14 @@ async def chat(request: ChatRequest) -> ChatResponse:
             prefix_parts.append("MCP calculators unavailable: " + str(exc))
             route_tags.append("mcp_error")
 
-        # Pass session_id as thread_id so MemorySaver persists conversation history.
+        # Build conversation context for graph
         graph_config = {"configurable": {"thread_id": request.session_id}}
 
         result = graph.invoke(
             {
                 "message": message,
                 "session_id": request.session_id,
+                "messages": history,
                 "completed_agents": [],
                 "partial_results": {},
             },
@@ -156,6 +200,11 @@ async def chat(request: ChatRequest) -> ChatResponse:
             response = coach
             route = result["final_route"]
 
+        # Save conversation to Redis history
+        history.append({"role": "user", "content": message})
+        history.append({"role": "assistant", "content": response})
+        _save_history(request.session_id, history)
+
         return ChatResponse(
             response=response,
             route=route,
@@ -168,12 +217,12 @@ async def chat(request: ChatRequest) -> ChatResponse:
         raise HTTPException(status_code=500, detail=f"Internal error: {str(exc)}")
 
 
+# ── Streaming endpoint ────────────────────────────────────────────────────────
+
 @router.post("/chat/stream")
 async def chat_stream(request: ChatRequest) -> StreamingResponse:
     """
-    Streaming endpoint for rubric compliance (2.5).
-    Runs the same graph logic as /chat and streams the final response
-    word-by-word as plain text. No token-level LLM streaming required.
+    Streaming endpoint — streams the final response word-by-word.
     """
     message = request.message.strip()
     if not message:
@@ -187,11 +236,15 @@ async def chat_stream(request: ChatRequest) -> StreamingResponse:
 
     graph_config = {"configurable": {"thread_id": request.session_id}}
 
+    # Load history
+    history = _load_history(request.session_id)
+
     try:
         result = graph.invoke(
             {
                 "message": message,
                 "session_id": request.session_id,
+                "messages": history,
                 "completed_agents": [],
                 "partial_results": {},
             },
@@ -203,9 +256,14 @@ async def chat_stream(request: ChatRequest) -> StreamingResponse:
 
     final_text = apply_output_guardrails(result["final_response"], message)
 
+    # Save to history
+    history.append({"role": "user", "content": message})
+    history.append({"role": "assistant", "content": final_text})
+    _save_history(request.session_id, history)
+
     async def word_stream():
         for word in final_text.split(" "):
             yield word + " "
-            await asyncio.sleep(0)  # yield control to event loop between words
+            await asyncio.sleep(0)
 
     return StreamingResponse(word_stream(), media_type="text/plain")

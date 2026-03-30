@@ -119,7 +119,7 @@ That's it. Docker Compose will:
 
 | Service | URL |
 |---------|-----|
-| Chat UI | Open `chat_ui.html` in your browser |
+| Chat UI | http://localhost:8000 |
 | Agent A API | http://localhost:8000 |
 | Agent B API | http://localhost:8001 |
 | Swagger UI | http://localhost:8000/docs |
@@ -225,6 +225,31 @@ Qdrant provides persistent storage via Docker volumes, metadata filtering (`sour
 ### Why Redis for session management?
 Redis serves as a LangGraph checkpointer — it persists the agent state (which specialists completed, partial results) per `session_id`. This means the graph can resume if interrupted and prevents re-running completed agents. It falls back gracefully to `MemorySaver` if Redis is unavailable.
 
+## Session Memory
+
+Conversation history is persisted in Redis per `session_id`. Each message (user + assistant) is stored as a JSON array under the key `history:{session_id}` with a 24-hour TTL. The last 20 messages are kept to avoid context overflow.
+
+To inspect a session:
+```bash
+docker exec final_project_christina-redis-1 redis-cli get "history:{session_id}"
+```
+
+## MCP Server
+
+The MCP server runs on port 8002 using FastMCP StreamableHTTP protocol. It exposes three deterministic body metrics tools:
+- `calculate_tdee` — Total Daily Energy Expenditure using Mifflin-St Jeor formula
+- `calculate_macros` — Protein, carbs, and fats in grams based on calories and goal
+- `estimate_goal_timeline` — Weeks to reach target weight
+
+Call via API:
+```json
+{
+  "message": "calculate my TDEE",
+  "session_id": "test",
+  "mcp_tdee": {"age": 25, "sex": "female", "weight_kg": 65, "height_cm": 165, "activity_level": "moderate"}
+}
+```
+
 ### Supervisor Routing Design
 The supervisor uses a two-layer routing strategy: fast keyword matching first (no LLM call needed for obvious queries), with LLM fallback for ambiguous cases. This reduces latency for common queries while maintaining flexibility for complex routing decisions.
 
@@ -253,12 +278,10 @@ The system went through a significant architectural redesign during development.
 
 1. **Model size constraints** — `qwen2.5:1.5b` is small and occasionally misroutes ambiguous queries (e.g., "deadlift mistakes" may route to nutrition instead of exercise). A larger model (7B+) would improve routing accuracy significantly.
 
-2. **No cross-session memory** — Redis persists LangGraph state per session, but the LLM does not have access to conversation history across separate API calls. Each request is effectively stateless from the LLM's perspective.
+2. **Progress tool requires structured input** — The progress analysis tool uses deterministic math (Epley 1RM formula) and requires workout logs in a specific format (`exercise weightkg reps sets on YYYY-MM-DD`). Free-form natural language logs may not parse correctly.
 
-3. **Progress tool requires structured input** — The progress analysis tool uses deterministic math (Epley 1RM formula) and requires workout logs in a specific format (`exercise weightkg reps sets on YYYY-MM-DD`). Free-form natural language logs may not parse correctly.
+3. **CPU-only embedding** — The `all-MiniLM-L6-v2` embedding model in Agent B runs on CPU. For high-throughput deployments, GPU-accelerated embeddings would reduce ingestion and retrieval latency.
 
-4. **CPU-only embedding** — The `all-MiniLM-L6-v2` embedding model in Agent B runs on CPU. For high-throughput deployments, GPU-accelerated embeddings would reduce ingestion and retrieval latency.
+4. **Exercise retrieval quality** — The exercise agent uses direct JSON filtering rather than semantic search. Queries with ambiguous muscle group names or non-standard terminology may return suboptimal results.
 
-5. **Exercise retrieval quality** — The exercise agent uses direct JSON filtering rather than semantic search. Queries with ambiguous muscle group names or non-standard terminology may return suboptimal results.
-
-6. **GPU dependency** — The system requires an NVIDIA GPU for Ollama. CPU-only mode is possible but response latency increases to 30-60s per query, making it impractical for interactive use.
+5. **GPU dependency** — The system requires an NVIDIA GPU for Ollama. CPU-only mode is possible but response latency increases to 30-60s per query, making it impractical for interactive use.

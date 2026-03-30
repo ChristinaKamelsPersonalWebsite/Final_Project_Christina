@@ -4,6 +4,8 @@ import logging
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 from agent_system_a.api.routes import router as agent_system_a_router
 
@@ -16,11 +18,8 @@ app = FastAPI(title="Agent System A", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://127.0.0.1:5500",
-        "http://localhost:5500",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -29,6 +28,11 @@ app.add_middleware(
 @app.get("/health", tags=["health"])
 def health() -> dict:
     return {"status": "ok"}
+
+
+@app.get("/")
+def serve_ui():
+    return FileResponse("fitness_chat_ui.html")
 
 
 app.include_router(agent_system_a_router)

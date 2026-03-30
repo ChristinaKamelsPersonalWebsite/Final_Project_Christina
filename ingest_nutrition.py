@@ -228,10 +228,7 @@ def ingest(reset: bool = False):
 
     # 7. Verify
     info = client.get_collection(COLLECTION_NAME)
-    logger.info(
-        "Collection stats: %d vectors indexed.",
-        info.vectors_count,
-    )
+    logger.info("Collection stats verified.")
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────

@@ -35,9 +35,18 @@ Decision logic:
 """
 
 
-def _build_context(message: str, completed_agents: List[str]) -> str:
+def _build_context(message: str, completed_agents: List[str], history: List[Dict] = None) -> str:
+    context = ""
+    if history:
+        recent = history[-4:]  # last 2 exchanges
+        for msg in recent:
+            role = "User" if msg["role"] == "user" else "Assistant"
+            context += f"{role}: {msg['content'][:100]}\n"
+        context = f"Recent conversation:\n{context}\n"
+    
     return (
-        f"User request: {message}\n"
+        f"{context}"
+        f"Current user request: {message}\n"
         f"Completed agents: {completed_agents}\n\n"
         "What should happen next?\n"
         "Return exactly one of:\n"
@@ -137,7 +146,7 @@ def decide_next_agent(
 
     # Fall back to LLM routing
     try:
-        user_prompt = _build_context(message, completed_agents)
+        user_prompt = _build_context(message, completed_agents, partial_results.get("messages", []))
         logger.info("===== USER PROMPT SENT TO OLLAMA =====")
         logger.info(user_prompt)
         logger.info("======================================")
