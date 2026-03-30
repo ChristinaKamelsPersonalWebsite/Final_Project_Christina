@@ -205,6 +205,74 @@ Generation quality was evaluated using `qwen2.5:1.5b` as the judge model, scorin
 |-----------|--------|-------------|
 | `qwen2.5:1.5b` poor routing on ambiguous queries | 3 misroutes out of 20 | Upgrade to 7B+ model |
 | Sequential keyword matching order matters | PPL query misrouted | Reorder: progress → program → nutrition → exercise |
-| No conversation memory across API calls | Cannot follow up on previous answers | Store messages in Redis per session |
 | Exercise retrieval is keyword-based, not semantic | May miss relevant exercises for unusual queries | Add embedding-based semantic search layer |
 | Retrieval evaluation on small curated corpus | Perfect scores may not generalize | Test with larger, noisier knowledge base |
+---
+
+## 8. Additional Test Cases & Results
+
+## ollama qwen 2.5:7b test case
+
+### Examples 
+-------------
+# 1
+![Example 1](images_for_report/example1.png)
+-----------------------------------------------------
+
+# 2
+![Example 2](images_for_report/example2.png)
+-----------------------------------------------------
+
+# 3
+![Example 3](images_for_report/example3.png)
+-----------------------------------------------------
+
+# 4
+![Example 4](images_for_report/example4.png)
+-----------------------------------------------------
+
+# 5
+![Example 5](images_for_report/example5.png)
+-----------------------------------------------------
+
+# 6
+![Example 6](images_for_report/example6.png)
+-----------------------------------------------------
+
+# 7
+![Example 7](images_for_report/example7.png)
+-----------------------------------------------------
+
+# 8
+![Example 8](images_for_report/example8.png)
+
+-----------------------------------------------------
+
+### Models(proof of download of the two ollama models)
+
+![Models Downloaded](images_for_report/models_downloaded.png)
+
+![Two Big Ollama Models](images_for_report/ollama_models.png)
+-----------------------------------------------------------------
+### Test Cases
+# 1
+![Test Case 1 After Update](images_for_report/test_case_1_after_update.png)
+-----------------------------------------------------
+
+# 2 UI
+![Test Case 2](images_for_report/test_case_2.png)
+-----------------------------------------------------
+
+# 3 UI
+![Test Case 3](images_for_report/test_case_3.png)
+-----------------------------------------------------
+ 
+ ## BERT (Intent Classification Bonus)
+
+This section demonstrates the BERT-based intent classifier used as a bonus feature. The model classifies user queries into four categories: exercise, nutrition, program, and progress. It is implemented independently and does not interfere with the main LLM-based routing system.
+
+### Example 1
+![BERT Example 1](images_for_report/Bert_example.png)
+
+### Example 2
+![BERT Example 2](images_for_report/Bert_example2.png)

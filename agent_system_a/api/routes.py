@@ -1,5 +1,10 @@
 from __future__ import annotations
 
+from fastapi import APIRouter
+from pydantic import BaseModel
+
+from bonus.bert_classifier.classify_query import classify_query
+
 import asyncio
 import json
 import traceback
@@ -7,6 +12,7 @@ import traceback
 import redis as redis_lib
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
+
 
 from agent_system_a.app.config import get_settings
 from agent_system_a.app.graph import build_graph
@@ -22,6 +28,20 @@ from agent_system_a.tools.mcp_client import (
 router = APIRouter()
 graph = build_graph()
 settings = get_settings()
+
+
+
+
+router = APIRouter()
+
+
+class BertIntentRequest(BaseModel):
+    message: str
+
+
+@router.post("/bert-intent")
+def bert_intent(payload: BertIntentRequest):
+    return classify_query(payload.message)
 
 # ── Redis conversation history ────────────────────────────────────────────────
 

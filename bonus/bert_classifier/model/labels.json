@@ -1,0 +1,16 @@
+{
+  "labels": [
+    "exercise",
+    "nutrition",
+    "program",
+    "progress"
+  ],
+  "metrics": {
+    "eval_loss": 1.3804155588150024,
+    "eval_accuracy": 0.2,
+    "eval_runtime": 0.0164,
+    "eval_samples_per_second": 304.319,
+    "eval_steps_per_second": 182.591,
+    "epoch": 3.0
+  }
+}

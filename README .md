@@ -95,8 +95,13 @@ FitnessCoach AI is a conversational fitness assistant that routes user queries t
 
 ### Prerequisites
 
+### Prerequisites
+
 - Docker Desktop with GPU support (NVIDIA)
+- NVIDIA GPU drivers installed
 - Git
+
+> **No GPU?** Set `OLLAMA_NUM_GPU=0` in `.env` — responses will be slower (30-60s) but the system will still work.
 
 ### Run with one command
 
@@ -194,7 +199,7 @@ Final_Project_Christina/
 │   └── Dockerfile
 ├── data/                    # exercises.json, workout_programs.json, nutrition_guides.json
 ├── evaluation/              # test set, retrieval metrics, RAGAS eval scripts
-├── chat_ui.html             # Browser-based chat interface
+├── fitness_chat_ui.html     # Browser-based chat interface (served at http://localhost:8000)
 ├── ingest_nutrition.py      # One-time Qdrant ingestion script
 ├── ollama-init.sh           # Auto-pulls qwen2.5:1.5b on startup
 ├── docker-compose.yml
@@ -273,6 +278,10 @@ The system went through a significant architectural redesign during development.
 - Downgraded LLM to **qwen2.5:1.5b** (986MB) — fits comfortably in 6GB VRAM with room for inference
 - Kept Agent B as a **fully independent FastAPI service** — preserving the microservice architecture principle
 
+#### small note
+Model Download & Dockerization Challenges: A significant portion of development time was spent on model management. Initially, we downloaded and integrated qwen2.5:7b (4.7GB) into the Docker environment — a process that required careful configuration of GPU passthrough, Ollama volume mounting, and the ollama-init.sh startup script. After successfully running the 7B model, we discovered it consumed nearly all available VRAM on the RTX 4050, leaving insufficient headroom for inference and causing OOM crashes mid-conversation. The decision to downgrade to qwen2.5:1.5b was made after profiling GPU memory usage and confirming the 7B model was not viable on 6GB VRAM. The smaller model required re-testing all agent prompts and synthesis quality, as the reduced model capacity affected routing accuracy and response richness. This was a real engineering constraint, not a shortcut — and it led to the keyword-first routing optimization to compensate for the smaller model's weaker reasoning.
+
+
 
 ## Known Limitations
 
@@ -285,3 +294,30 @@ The system went through a significant architectural redesign during development.
 4. **Exercise retrieval quality** — The exercise agent uses direct JSON filtering rather than semantic search. Queries with ambiguous muscle group names or non-standard terminology may return suboptimal results.
 
 5. **GPU dependency** — The system requires an NVIDIA GPU for Ollama. CPU-only mode is possible but response latency increases to 30-60s per query, making it impractical for interactive use.
+
+
+## BERT Bonus Module
+
+A lightweight fine-tuned BERT classifier was added as a bonus feature for query intent classification.
+
+### Purpose
+The model classifies user fitness queries into 4 intent categories:
+- exercise
+- nutrition
+- program
+- progress
+
+### Implementation
+A lightweight BERT variant (`prajjwal1/bert-tiny`) was fine-tuned on a small custom dataset of fitness-related queries. This was implemented as a separate bonus module to avoid interfering with the stable main dockerized multi-agent pipeline.
+
+### Files
+- `bonus/bert_classifier/train_bert.py` → training script
+- `bonus/bert_classifier/classify_query.py` → inference/classification script
+- `bonus/bert_classifier/demo.py` → local demo script
+- `bonus/bert_classifier/model/` → saved trained model files
+
+### How to run
+From the project root:
+
+```bash
+python bonus/bert_classifier/demo.py
