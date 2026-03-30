@@ -1,0 +1,191 @@
+{
+  "summary": {
+    "k": 5,
+    "questions_evaluated": 18,
+    "mean_precision@5": 1.0,
+    "mean_recall@5": 1.0,
+    "MRR": 1.0
+  },
+  "per_question": [
+    {
+      "id": 1,
+      "question": "What are some good chest exercises I can do with a barbell?",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 2,
+      "question": "Give me beginner-friendly back exercises.",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 3,
+      "question": "What exercises target the quadriceps?",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 4,
+      "question": "What are bodyweight exercises for shoulders?",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 5,
+      "question": "Show me tricep exercises I can do with a cable machine.",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 6,
+      "question": "What are common mistakes in the deadlift?",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 7,
+      "question": "What ab exercises can I do at home with no equipment?",
+      "source_type": "exercise",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 8,
+      "question": "How much protein should I eat per day to build muscle?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 9,
+      "question": "What should I eat before a workout?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 10,
+      "question": "What should I eat after a workout?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 11,
+      "question": "How much water should I drink during training?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 12,
+      "question": "What are the best supplements for strength training?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 13,
+      "question": "How do I calculate my daily calorie intake for fat loss?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 14,
+      "question": "What are good high-protein meal prep ideas?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 15,
+      "question": "Build me a 3-day beginner full body workout program.",
+      "source_type": "program",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 16,
+      "question": "I want a 4-day upper lower split for intermediate lifters.",
+      "source_type": "program",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 17,
+      "question": "Give me a 5-day push pull legs program for muscle gain.",
+      "source_type": "program",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": 18,
+      "question": "Create a home workout plan using only dumbbells, 3 days per week.",
+      "source_type": "program",
+      "retrieved": 5,
+      "relevant_retrieved": 5,
+      "precision@5": 1.0,
+      "recall@5": 1.0,
+      "reciprocal_rank": 1.0
+    }
+  ]
+}

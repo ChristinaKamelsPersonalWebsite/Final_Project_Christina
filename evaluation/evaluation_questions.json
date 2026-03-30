@@ -1,0 +1,212 @@
+[
+    {
+      "id": 1,
+      "question": "Give me a beginner dumbbell chest exercise.",
+      "expected_answer": "Decline Dumbbell Bench Press",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 2,
+      "question": "Name another beginner dumbbell chest exercise.",
+      "expected_answer": "Decline Dumbbell Flyes",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 3,
+      "question": "What is a beginner dumbbell exercise for biceps?",
+      "expected_answer": "Alternate Hammer Curl",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 4,
+      "question": "Give me a beginner dumbbell shoulder exercise.",
+      "expected_answer": "Alternating Deltoid Raise",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 5,
+      "question": "What is an intermediate dumbbell exercise for shoulders?",
+      "expected_answer": "Arnold Dumbbell Press",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 6,
+      "question": "Suggest a beginner band exercise for shoulders.",
+      "expected_answer": "Back Flyes - With Bands",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 7,
+      "question": "Give me a beginner band exercise for hamstrings.",
+      "expected_answer": "Band Good Morning",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 8,
+      "question": "What is a bodyweight beginner exercise for abs?",
+      "expected_answer": "3/4 Sit-Up",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 9,
+      "question": "Give me a beginner stretching exercise for hamstrings.",
+      "expected_answer": "90/90 Hamstring",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 10,
+      "question": "Name a strongman lower back exercise.",
+      "expected_answer": "Atlas Stones",
+      "category": "exercise",
+      "source": "exercises.json"
+    },
+    {
+      "id": 11,
+      "question": "What are macros?",
+      "expected_answer": "Protein, carbohydrates, and fats",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 12,
+      "question": "What does a calorie deficit do?",
+      "expected_answer": "Helps with weight loss",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 13,
+      "question": "What does a calorie surplus do?",
+      "expected_answer": "Supports weight gain and muscle growth",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 14,
+      "question": "What are maintenance calories?",
+      "expected_answer": "Calories that maintain body weight",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 15,
+      "question": "How often should I eat during the day?",
+      "expected_answer": "Every 3 to 5 hours",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 16,
+      "question": "What should I eat before a workout?",
+      "expected_answer": "Carbohydrates and protein before training",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 17,
+      "question": "What should I eat after a workout?",
+      "expected_answer": "Protein and carbohydrates after training",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 18,
+      "question": "Why is hydration important?",
+      "expected_answer": "Supports performance, energy, and overall health",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 19,
+      "question": "Name a beginner supplement.",
+      "expected_answer": "Protein powder",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 20,
+      "question": "Give one protein food example.",
+      "expected_answer": "Chicken breast",
+      "category": "nutrition",
+      "source": "nutrition_guides.json"
+    },
+    {
+      "id": 21,
+      "question": "What is the Beginner Full Body program?",
+      "expected_answer": "A 3-day beginner gym program",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 22,
+      "question": "How many days per week is Push Pull Legs?",
+      "expected_answer": "3 days per week",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 23,
+      "question": "What does Push day focus on?",
+      "expected_answer": "Chest, shoulders, and triceps",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 24,
+      "question": "What is the goal of the Upper Lower Split?",
+      "expected_answer": "Increase strength and muscle",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 25,
+      "question": "How many days is Upper Lower Split?",
+      "expected_answer": "4 days per week",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 26,
+      "question": "What is a home workout program?",
+      "expected_answer": "Home Dumbbell Workout",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 27,
+      "question": "What equipment does Bodyweight Only Program use?",
+      "expected_answer": "Bodyweight",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 28,
+      "question": "Give one exercise from Beginner Full Body Day 1.",
+      "expected_answer": "Goblet Squat",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 29,
+      "question": "Give one exercise from Upper Lower Split Day 3.",
+      "expected_answer": "Incline Dumbbell Press",
+      "category": "program",
+      "source": "workout_programs.json"
+    },
+    {
+      "id": 30,
+      "question": "Give one exercise from Bodyweight Program Day 1.",
+      "expected_answer": "Bodyweight Squat",
+      "category": "program",
+      "source": "workout_programs.json"
+    }
+  ]

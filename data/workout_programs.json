@@ -1,0 +1,533 @@
+[
+  {
+    "program_name": "Beginner Full Body",
+    "goal": "Build foundational strength and technique",
+    "level": "beginner",
+    "days_per_week": 3,
+    "equipment": "gym",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Full Body A",
+        "exercises": [
+          { "name": "Goblet Squat", "sets": 3, "reps": "8-10" },
+          { "name": "Machine Chest Press", "sets": 3, "reps": "8-10" },
+          { "name": "Lat Pulldown", "sets": 3, "reps": "8-10" },
+          { "name": "Dumbbell Romanian Deadlift", "sets": 3, "reps": "10" },
+          { "name": "Plank", "sets": 3, "reps": "30 sec" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Full Body B",
+        "exercises": [
+          { "name": "Leg Press", "sets": 3, "reps": "10-12" },
+          { "name": "Seated Row Machine", "sets": 3, "reps": "8-10" },
+          { "name": "Dumbbell Shoulder Press", "sets": 3, "reps": "8-10" },
+          { "name": "Glute Bridge", "sets": 3, "reps": "12-15" },
+          { "name": "Dead Bug", "sets": 3, "reps": "8/side" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Full Body C",
+        "exercises": [
+          { "name": "Bodyweight or Assisted Squat", "sets": 3, "reps": "10-12" },
+          { "name": "Incline Dumbbell Press", "sets": 3, "reps": "8-10" },
+          { "name": "Cable Row", "sets": 3, "reps": "8-10" },
+          { "name": "Back Extension or Hip Hinge", "sets": 3, "reps": "10-12" },
+          { "name": "Side Plank", "sets": 3, "reps": "20 sec/side" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Push Pull Legs",
+    "goal": "Build balanced upper and lower body strength",
+    "level": "intermediate",
+    "days_per_week": 3,
+    "equipment": "gym",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Push (Chest, Shoulders, Triceps)",
+        "exercises": [
+          { "name": "Barbell Bench Press", "sets": 4, "reps": "6-8" },
+          { "name": "Overhead Press", "sets": 3, "reps": "6-8" },
+          { "name": "Incline Dumbbell Press", "sets": 3, "reps": "8-10" },
+          { "name": "Cable Lateral Raise", "sets": 3, "reps": "12-15" },
+          { "name": "Triceps Rope Pushdown", "sets": 3, "reps": "10-12" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Pull (Back, Biceps)",
+        "exercises": [
+          { "name": "Deadlift", "sets": 3, "reps": "3-5" },
+          { "name": "Pull-Up or Assisted Pull-Up", "sets": 4, "reps": "6-8" },
+          { "name": "Bent-Over Row", "sets": 3, "reps": "6-8" },
+          { "name": "Face Pull", "sets": 3, "reps": "12-15" },
+          { "name": "Dumbbell Curl", "sets": 3, "reps": "10-12" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Legs (Quads, Hamstrings, Glutes)",
+        "exercises": [
+          { "name": "Back Squat", "sets": 4, "reps": "6-8" },
+          { "name": "Romanian Deadlift", "sets": 3, "reps": "8-10" },
+          { "name": "Leg Press", "sets": 3, "reps": "10-12" },
+          { "name": "Walking Lunge", "sets": 3, "reps": "10/leg" },
+          { "name": "Standing Calf Raise", "sets": 3, "reps": "12-15" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Upper Lower Split",
+    "goal": "Increase strength and muscle with higher frequency",
+    "level": "intermediate",
+    "days_per_week": 4,
+    "equipment": "gym",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Upper Heavy",
+        "exercises": [
+          { "name": "Bench Press", "sets": 4, "reps": "5" },
+          { "name": "Weighted Pull-Up or Lat Pulldown", "sets": 4, "reps": "6" },
+          { "name": "Barbell Row", "sets": 3, "reps": "6-8" },
+          { "name": "Overhead Press", "sets": 3, "reps": "6-8" },
+          { "name": "Barbell Curl", "sets": 2, "reps": "8-10" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Lower Heavy",
+        "exercises": [
+          { "name": "Back Squat", "sets": 4, "reps": "5" },
+          { "name": "Romanian Deadlift", "sets": 3, "reps": "6-8" },
+          { "name": "Leg Press", "sets": 3, "reps": "8-10" },
+          { "name": "Standing Calf Raise", "sets": 3, "reps": "10-12" },
+          { "name": "Hanging Knee Raise", "sets": 3, "reps": "10-12" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Upper Volume",
+        "exercises": [
+          { "name": "Incline Dumbbell Press", "sets": 3, "reps": "8-10" },
+          { "name": "Seated Cable Row", "sets": 3, "reps": "10-12" },
+          { "name": "Dumbbell Lateral Raise", "sets": 3, "reps": "12-15" },
+          { "name": "Cable Fly", "sets": 2, "reps": "12-15" },
+          { "name": "Hammer Curl", "sets": 2, "reps": "10-12" }
+        ]
+      },
+      {
+        "day": "Day 4",
+        "focus": "Lower Volume",
+        "exercises": [
+          { "name": "Front Squat or Hack Squat", "sets": 3, "reps": "8-10" },
+          { "name": "Leg Curl", "sets": 3, "reps": "10-12" },
+          { "name": "Walking Lunge", "sets": 3, "reps": "10/leg" },
+          { "name": "Seated Calf Raise", "sets": 3, "reps": "12-15" },
+          { "name": "Cable Woodchop", "sets": 3, "reps": "10/side" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Home Dumbbell Workout",
+    "goal": "Build muscle and strength at home with minimal equipment",
+    "level": "beginner",
+    "days_per_week": 3,
+    "equipment": "home",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Full Body A",
+        "exercises": [
+          { "name": "Goblet Squat", "sets": 3, "reps": "10-12" },
+          { "name": "Floor Dumbbell Press", "sets": 3, "reps": "10-12" },
+          { "name": "One-Arm Dumbbell Row", "sets": 3, "reps": "10/side" },
+          { "name": "Dumbbell Romanian Deadlift", "sets": 3, "reps": "10-12" },
+          { "name": "Dead Bug", "sets": 3, "reps": "8/side" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Upper Focus",
+        "exercises": [
+          { "name": "Incline Push-Up (feet raised if able)", "sets": 3, "reps": "8-12" },
+          { "name": "Seated Dumbbell Shoulder Press", "sets": 3, "reps": "10" },
+          { "name": "Dumbbell Row", "sets": 3, "reps": "10-12" },
+          { "name": "Dumbbell Curl", "sets": 3, "reps": "10-12" },
+          { "name": "Overhead Dumbbell Triceps Extension", "sets": 3, "reps": "10-12" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Lower & Core",
+        "exercises": [
+          { "name": "Reverse Lunge", "sets": 3, "reps": "10/leg" },
+          { "name": "Glute Bridge (weighted if possible)", "sets": 3, "reps": "12-15" },
+          { "name": "Single-Leg Romanian Deadlift", "sets": 3, "reps": "8/leg" },
+          { "name": "Side Plank", "sets": 3, "reps": "20-30 sec/side" },
+          { "name": "Russian Twist", "sets": 3, "reps": "12/side" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Bodyweight Only Program",
+    "goal": "Improve general fitness, control, and endurance",
+    "level": "beginner",
+    "days_per_week": 3,
+    "equipment": "bodyweight",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Full Body Strength",
+        "exercises": [
+          { "name": "Bodyweight Squat", "sets": 3, "reps": "12-15" },
+          { "name": "Incline Push-Up", "sets": 3, "reps": "8-12" },
+          { "name": "Hip Hinge Good Morning", "sets": 3, "reps": "12-15" },
+          { "name": "Glute Bridge", "sets": 3, "reps": "12-15" },
+          { "name": "Plank", "sets": 3, "reps": "30 sec" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Upper & Core",
+        "exercises": [
+          { "name": "Push-Up (elevated if needed)", "sets": 3, "reps": "6-10" },
+          { "name": "Inverted Row (table or sturdy surface)", "sets": 3, "reps": "6-10" },
+          { "name": "Pike Push-Up (or wall push-up)", "sets": 3, "reps": "6-10" },
+          { "name": "Dead Bug", "sets": 3, "reps": "8/side" },
+          { "name": "Side Plank", "sets": 3, "reps": "20 sec/side" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Lower & Conditioning",
+        "exercises": [
+          { "name": "Reverse Lunge", "sets": 3, "reps": "10/leg" },
+          { "name": "Step-Up (bench or stair)", "sets": 3, "reps": "10/leg" },
+          { "name": "Glute Bridge March", "sets": 3, "reps": "10/side" },
+          { "name": "Mountain Climber", "sets": 3, "reps": "30 sec" },
+          { "name": "Jumping Jack", "sets": 3, "reps": "30 sec" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "5x5 Strength Program",
+    "goal": "Increase maximal strength in major barbell lifts",
+    "level": "intermediate",
+    "days_per_week": 3,
+    "equipment": "gym",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Squat, Bench, Accessory",
+        "exercises": [
+          { "name": "Back Squat", "sets": 5, "reps": "5" },
+          { "name": "Bench Press", "sets": 5, "reps": "5" },
+          { "name": "Barbell Row", "sets": 5, "reps": "5" },
+          { "name": "Face Pull", "sets": 3, "reps": "12-15" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Squat, Overhead Press, Deadlift",
+        "exercises": [
+          { "name": "Back Squat (lighter)", "sets": 5, "reps": "5" },
+          { "name": "Overhead Press", "sets": 5, "reps": "5" },
+          { "name": "Deadlift", "sets": 1, "reps": "5" },
+          { "name": "Hanging Leg Raise", "sets": 3, "reps": "8-10" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Squat, Bench, Row",
+        "exercises": [
+          { "name": "Back Squat", "sets": 5, "reps": "5" },
+          { "name": "Bench Press", "sets": 5, "reps": "5" },
+          { "name": "Barbell Row", "sets": 5, "reps": "5" },
+          { "name": "Triceps Pushdown", "sets": 3, "reps": "10-12" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Hypertrophy Split",
+    "goal": "Maximize muscle growth",
+    "level": "intermediate",
+    "days_per_week": 5,
+    "equipment": "gym",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Chest & Triceps",
+        "exercises": [
+          { "name": "Bench Press", "sets": 3, "reps": "8-10" },
+          { "name": "Incline Dumbbell Press", "sets": 3, "reps": "8-10" },
+          { "name": "Cable Fly", "sets": 3, "reps": "12-15" },
+          { "name": "Overhead Triceps Extension", "sets": 3, "reps": "10-12" },
+          { "name": "Triceps Rope Pushdown", "sets": 3, "reps": "12-15" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Back & Biceps",
+        "exercises": [
+          { "name": "Lat Pulldown", "sets": 3, "reps": "8-10" },
+          { "name": "Seated Cable Row", "sets": 3, "reps": "8-10" },
+          { "name": "Single-Arm Dumbbell Row", "sets": 3, "reps": "10/side" },
+          { "name": "Barbell Curl", "sets": 3, "reps": "10-12" },
+          { "name": "Hammer Curl", "sets": 2, "reps": "12-15" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Legs",
+        "exercises": [
+          { "name": "Back Squat or Hack Squat", "sets": 4, "reps": "8-10" },
+          { "name": "Romanian Deadlift", "sets": 3, "reps": "8-10" },
+          { "name": "Leg Press", "sets": 3, "reps": "12-15" },
+          { "name": "Leg Curl", "sets": 3, "reps": "12-15" },
+          { "name": "Standing Calf Raise", "sets": 3, "reps": "12-15" }
+        ]
+      },
+      {
+        "day": "Day 4",
+        "focus": "Shoulders & Abs",
+        "exercises": [
+          { "name": "Seated Dumbbell Shoulder Press", "sets": 3, "reps": "8-10" },
+          { "name": "Lateral Raise", "sets": 3, "reps": "12-15" },
+          { "name": "Rear Delt Fly", "sets": 3, "reps": "12-15" },
+          { "name": "Hanging Knee Raise", "sets": 3, "reps": "10-12" },
+          { "name": "Cable Woodchop", "sets": 3, "reps": "10/side" }
+        ]
+      },
+      {
+        "day": "Day 5",
+        "focus": "Full Body Pump",
+        "exercises": [
+          { "name": "Leg Press", "sets": 3, "reps": "12-15" },
+          { "name": "Machine Chest Press", "sets": 3, "reps": "12-15" },
+          { "name": "Lat Pulldown (wide)", "sets": 3, "reps": "12-15" },
+          { "name": "Cable Lateral Raise", "sets": 3, "reps": "15" },
+          { "name": "Plank", "sets": 3, "reps": "45 sec" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "HIIT Conditioning",
+    "goal": "Improve cardiovascular fitness and burn calories",
+    "level": "intermediate",
+    "days_per_week": 3,
+    "equipment": "bodyweight",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Full Body Intervals",
+        "exercises": [
+          { "name": "Burpee", "sets": 6, "reps": "30 sec work / 30 sec rest" },
+          { "name": "Bodyweight Squat", "sets": 6, "reps": "30 sec work / 30 sec rest" },
+          { "name": "Mountain Climber", "sets": 6, "reps": "30 sec work / 30 sec rest" },
+          { "name": "Plank", "sets": 4, "reps": "30 sec" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Lower Body & Core HIIT",
+        "exercises": [
+          { "name": "Reverse Lunge to Knee Drive", "sets": 6, "reps": "30 sec/side" },
+          { "name": "Jump Squat", "sets": 6, "reps": "20 sec work / 40 sec rest" },
+          { "name": "Glute Bridge March", "sets": 4, "reps": "30 sec" },
+          { "name": "Bicycle Crunch", "sets": 4, "reps": "30 sec" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Upper & Core HIIT",
+        "exercises": [
+          { "name": "Push-Up", "sets": 6, "reps": "20 sec work / 40 sec rest" },
+          { "name": "Inverted Row (low bar/table)", "sets": 6, "reps": "20 sec work / 40 sec rest" },
+          { "name": "Bear Crawl Hold & Steps", "sets": 4, "reps": "30 sec" },
+          { "name": "Side Plank", "sets": 4, "reps": "20 sec/side" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Yoga Flow Program",
+    "goal": "Improve mobility, balance, and relaxation",
+    "level": "beginner",
+    "days_per_week": 3,
+    "equipment": "bodyweight",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Gentle Full Body Flow",
+        "exercises": [
+          { "name": "Cat-Cow", "sets": 3, "reps": "8-10 breaths" },
+          { "name": "Sun Salutation A", "sets": 3, "reps": "5 cycles" },
+          { "name": "Warrior I to Warrior II", "sets": 2, "reps": "5 breaths/pose" },
+          { "name": "Child's Pose", "sets": 1, "reps": "2-3 min" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Hip & Hamstring Focus",
+        "exercises": [
+          { "name": "Low Lunge", "sets": 2, "reps": "5-8 breaths/side" },
+          { "name": "Pyramid Pose", "sets": 2, "reps": "5-8 breaths/side" },
+          { "name": "Figure Four Stretch (supine)", "sets": 2, "reps": "1-2 min/side" },
+          { "name": "Seated Forward Fold", "sets": 1, "reps": "2-3 min" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Balance & Core",
+        "exercises": [
+          { "name": "Tree Pose", "sets": 2, "reps": "5-8 breaths/side" },
+          { "name": "Chair Pose", "sets": 2, "reps": "5-8 breaths" },
+          { "name": "Boat Pose (Navasana)", "sets": 3, "reps": "20-30 sec" },
+          { "name": "Supine Twist", "sets": 1, "reps": "1-2 min/side" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Marathon Prep (16-Week Base Template)",
+    "goal": "Prepare for a marathon with progressive mileage",
+    "level": "intermediate",
+    "days_per_week": 5,
+    "equipment": "home",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Easy Run",
+        "exercises": [
+          { "name": "Easy Run", "sets": 1, "reps": "30-45 min easy pace" },
+          { "name": "Calf Stretch", "sets": 2, "reps": "30 sec/side" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Intervals or Tempo",
+        "exercises": [
+          { "name": "5-10 min Easy Warm-Up Jog", "sets": 1, "reps": "5-10 min" },
+          { "name": "Run Intervals", "sets": 4, "reps": "3-5 min faster / 2-3 min easy" },
+          { "name": "Cool-Down Jog", "sets": 1, "reps": "5-10 min" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Strength & Mobility",
+        "exercises": [
+          { "name": "Bodyweight Squat", "sets": 3, "reps": "12" },
+          { "name": "Reverse Lunge", "sets": 3, "reps": "10/leg" },
+          { "name": "Glute Bridge", "sets": 3, "reps": "12-15" },
+          { "name": "Plank", "sets": 3, "reps": "30-45 sec" }
+        ]
+      },
+      {
+        "day": "Day 4",
+        "focus": "Medium Long Run",
+        "exercises": [
+          { "name": "Steady Run", "sets": 1, "reps": "40-60 min moderate pace" }
+        ]
+      },
+      {
+        "day": "Day 5",
+        "focus": "Long Run",
+        "exercises": [
+          { "name": "Long Run", "sets": 1, "reps": "60-120 min easy pace (build over weeks)" },
+          { "name": "Walk Cool-Down", "sets": 1, "reps": "5-10 min" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Core & Mobility",
+    "goal": "Strengthen core and improve joint mobility",
+    "level": "beginner",
+    "days_per_week": 3,
+    "equipment": "bodyweight",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Core Stability",
+        "exercises": [
+          { "name": "Dead Bug", "sets": 3, "reps": "8/side" },
+          { "name": "Bird Dog", "sets": 3, "reps": "8/side" },
+          { "name": "Plank", "sets": 3, "reps": "20-30 sec" },
+          { "name": "Side Plank (knees down if needed)", "sets": 2, "reps": "20 sec/side" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Hips & Thoracic Mobility",
+        "exercises": [
+          { "name": "World's Greatest Stretch", "sets": 2, "reps": "5/side" },
+          { "name": "90/90 Hip Rotation", "sets": 2, "reps": "8/side" },
+          { "name": "Open Book Thoracic Rotation", "sets": 2, "reps": "8/side" },
+          { "name": "Cat-Cow", "sets": 2, "reps": "8-10" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Core Endurance",
+        "exercises": [
+          { "name": "Glute Bridge", "sets": 3, "reps": "12-15" },
+          { "name": "Dead Bug Hold", "sets": 3, "reps": "20 sec" },
+          { "name": "Pallof Press (band if available)", "sets": 3, "reps": "10/side" },
+          { "name": "Supine March", "sets": 3, "reps": "10/side" }
+        ]
+      }
+    ]
+  },
+  {
+    "program_name": "Glute & Leg Focus",
+    "goal": "Build lower body strength and glute development",
+    "level": "intermediate",
+    "days_per_week": 3,
+    "equipment": "gym",
+    "schedule": [
+      {
+        "day": "Day 1",
+        "focus": "Heavy Squat Day",
+        "exercises": [
+          { "name": "Back Squat", "sets": 4, "reps": "6-8" },
+          { "name": "Romanian Deadlift", "sets": 3, "reps": "8-10" },
+          { "name": "Walking Lunge", "sets": 3, "reps": "10/leg" },
+          { "name": "Standing Calf Raise", "sets": 3, "reps": "12-15" }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "focus": "Glute Isolation & Unilateral",
+        "exercises": [
+          { "name": "Hip Thrust (barbell or machine)", "sets": 4, "reps": "8-10" },
+          { "name": "Bulgarian Split Squat", "sets": 3, "reps": "8/leg" },
+          { "name": "Cable Kickback", "sets": 3, "reps": "12-15" },
+          { "name": "Seated Leg Curl", "sets": 3, "reps": "10-12" }
+        ]
+      },
+      {
+        "day": "Day 3",
+        "focus": "Volume & Conditioning",
+        "exercises": [
+          { "name": "Leg Press", "sets": 4, "reps": "12-15" },
+          { "name": "Step-Up", "sets": 3, "reps": "10/leg" },
+          { "name": "Glute Bridge March", "sets": 3, "reps": "12/side" },
+          { "name": "Bodyweight Squat or Goblet Squat Finisher", "sets": 2, "reps": "20" }
+        ]
+      }
+    ]
+  }
+]

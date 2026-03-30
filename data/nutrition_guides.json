@@ -1,0 +1,427 @@
+[
+  {
+    "topic": "macros",
+    "description": "Macronutrients (macros) are the main nutrients that give your body energy: protein, carbohydrates, and fats. Protein helps build and repair muscle, supports recovery, and keeps you feeling fuller for longer. Carbohydrates are your body’s preferred fuel source, especially for workouts and daily movement. Fats support hormones, brain health, and help your body absorb important vitamins. Protein and carbohydrates each provide 4 calories per gram, while fats provide 9 calories per gram.",
+    "key_points": [
+      "Macros are protein, carbohydrates, and fats",
+      "Protein supports muscle building and recovery",
+      "Carbs are the main fuel for workouts and daily activity",
+      "Fats support hormones, brain health, and vitamin absorption",
+      "Protein: 4 calories/gram, Carbs: 4 calories/gram, Fat: 9 calories/gram"
+    ],
+    "examples": [
+      "Including a source of protein at most meals (chicken, tofu, eggs, Greek yogurt)",
+      "Eating carbs like rice, pasta, or oats before or after workouts",
+      "Adding healthy fats like avocado, nuts, or olive oil to meals",
+      "Using a nutrition app to see how much protein, carbs, and fats you usually eat"
+    ]
+  },
+  {
+    "topic": "calorie_calculations",
+    "description": "Calories are the units of energy your body uses to move, think, and recover. A calorie deficit means you eat fewer calories than you burn, which over time leads to weight loss. A calorie surplus means you eat more calories than you burn, which helps you gain weight and can support muscle growth. Maintenance calories are the amount you eat to keep your weight about the same. Your goal (lose fat, build muscle, or maintain) decides whether you should aim for a deficit, surplus, or maintenance.",
+    "key_points": [
+      "Calories are your body’s energy supply",
+      "Calorie deficit over time leads to weight loss",
+      "Calorie surplus over time supports weight and muscle gain",
+      "Maintenance calories keep your body weight roughly stable",
+      "Small, steady changes work better than extreme dieting"
+    ],
+    "examples": [
+      "Eating about 250–500 fewer calories per day than you burn for slow, steady fat loss",
+      "Adding 200–300 calories per day (mostly from protein and carbs) to support muscle gain",
+      "Using a calorie calculator as a starting point for your daily target",
+      "Tracking weekly weight trends to see if you are in deficit, surplus, or maintenance"
+    ]
+  },
+  {
+    "topic": "meal_timing",
+    "description": "Meal timing is about when you eat your food during the day. Eating regularly, about every 3–5 hours, can help keep your energy steady and reduce strong hunger or cravings. Spreading your protein intake across the day supports better muscle repair and maintenance. Eating around your workouts, especially including protein and carbs, can help with performance and recovery. Total calories and macros matter most, but smart meal timing can make sticking to your plan easier.",
+    "key_points": [
+      "Eat regularly every 3–5 hours to support stable energy",
+      "Include protein in most meals and snacks",
+      "Use carbs before and after workouts to support performance and recovery",
+      "Avoid going very long without eating if it leads to overeating later",
+      "Total daily intake is most important, but timing can support your routine"
+    ],
+    "examples": [
+      "Having breakfast with protein and carbs (eggs and toast, yogurt and fruit)",
+      "Eating a balanced lunch and dinner with protein, carbs, and some fats",
+      "Having a small snack 1–2 hours before training if you feel low on energy",
+      "Eating a meal or snack with protein and carbs within a few hours after your workout"
+    ]
+  },
+  {
+    "topic": "pre_workout_nutrition",
+    "description": "Pre-workout nutrition is about what you eat before exercise to feel energized and comfortable. A mix of easy-to-digest carbs and a small amount of protein 1–3 hours before training usually works well for most people. Very heavy, greasy, or high-fiber foods right before a workout can cause stomach upset. Drinking water before your session helps support performance and focus. The best pre-workout meal or snack is one that gives you energy without making you feel too full.",
+    "key_points": [
+      "Prioritize carbohydrates before workouts for quick energy",
+      "Include a small to moderate amount of protein before training",
+      "Avoid very heavy, greasy, or very high-fiber foods right before intense sessions",
+      "Eat 1–3 hours before your workout depending on meal size and your comfort",
+      "Drink water leading up to your workout"
+    ],
+    "examples": [
+      "A banana and a scoop of protein powder 60–90 minutes before training",
+      "Oatmeal with some fruit and yogurt 2–3 hours before a workout",
+      "Rice and chicken eaten at lunch when you plan to train later in the afternoon",
+      "A slice of toast with peanut butter if you train early and have little time to eat"
+    ]
+  },
+  {
+    "topic": "post_workout_nutrition",
+    "description": "Post-workout nutrition helps your body recover and get ready for your next training session. A combination of protein and carbohydrates after exercise supports muscle repair and refills your energy stores. You do not need to eat immediately, but having a meal or snack within a few hours works well for most people. Rehydrating with water after training is also important, especially if you sweat a lot. Being consistent with your post-workout habits over time can improve recovery and results.",
+    "key_points": [
+      "Include protein after workouts to support muscle repair and growth",
+      "Add carbohydrates after training to refill energy stores",
+      "A meal or snack within a few hours after your workout is usually enough",
+      "Rehydrate with water, especially after long or sweaty sessions",
+      "Consistency of your post-workout routine matters more than perfect timing"
+    ],
+    "examples": [
+      "A protein shake and a piece of fruit after lifting weights",
+      "Chicken, rice, and vegetables as a balanced post-workout meal",
+      "Greek yogurt with berries and granola after a run",
+      "Water and, if needed, an electrolyte drink after intense or hot-weather training"
+    ]
+  },
+  {
+    "topic": "hydration",
+    "description": "Hydration is about giving your body enough fluids to function well. Water helps control body temperature, supports digestion, and keeps your muscles and joints working smoothly. Even mild dehydration can cause tiredness, headaches, muscle cramps, and weaker workout performance. A simple starting point is to sip water regularly during the day and drink more around your workouts. Many active people feel good aiming for about 2–3 liters per day, then adjusting for body size, climate, and sweat levels.",
+    "key_points": [
+      "Water is essential for energy, performance, and health",
+      "Mild dehydration can reduce strength, endurance, and focus",
+      "Drink water regularly during the day, not just when you feel very thirsty",
+      "Increase water intake in hot weather or during long, intense workouts",
+      "Pale yellow urine is a simple sign that you are generally well hydrated"
+    ],
+    "examples": [
+      "Carrying a reusable water bottle and refilling it a few times per day",
+      "Drinking a glass of water with each meal and snack",
+      "Sipping water before, during, and after workouts",
+      "Using an electrolyte drink for long or very sweaty training sessions"
+    ]
+  },
+  {
+    "topic": "supplements",
+    "description": "Supplements are optional tools that can support your nutrition but should not replace real food. Common beginner-friendly options include protein powder to help you reach your protein goals, creatine monohydrate to support strength and performance, and a basic multivitamin to help cover small nutrient gaps. Always follow label instructions and be careful with products that promise fast or extreme results. People respond differently to supplements, and it can be helpful to let your doctor know what you take. Focus first on solid habits like balanced meals, sleep, and consistent training before adding many supplements.",
+    "key_points": [
+      "Supplements add to a good diet, they do not replace it",
+      "Protein powder is a convenient way to increase daily protein intake",
+      "Creatine monohydrate is commonly used to support strength and high-intensity performance",
+      "A basic multivitamin may help cover small nutrient gaps",
+      "Be cautious of supplements that make big or unrealistic claims"
+    ],
+    "examples": [
+      "Using a whey or plant-based protein shake after workouts or with breakfast",
+      "Taking 3–5 grams of creatine monohydrate per day, according to the product label",
+      "Using a simple daily multivitamin if your food choices are inconsistent",
+      "Choosing supplements from brands that use third-party testing for quality"
+    ]
+  },
+  {
+    "topic": "meal_prep_tips",
+    "description": "Meal prep is planning and preparing food in advance so healthy choices are easier during busy days. Cooking in batches can save time, reduce stress, and make it easier to stick to your calorie and macro targets. Prepping basic ingredients like proteins, grains, and vegetables lets you quickly mix and match meals. Using containers to portion meals can help you avoid guesswork and last-minute takeout. Keeping your routine simple and repeatable makes it more likely you will stick with it long term.",
+    "key_points": [
+      "Plan a few simple meals you enjoy and can repeat",
+      "Cook proteins, grains, and vegetables in bulk once or twice per week",
+      "Use containers to portion out meals for quick grab-and-go options",
+      "Keep easy, goal-friendly snacks available at home and work",
+      "Start small with one or two prepped meals per week and build from there"
+    ],
+    "examples": [
+      "Batch-cooking chicken, rice, and mixed vegetables on Sunday for several lunches",
+      "Preparing overnight oats or yogurt bowls for a few days of breakfasts",
+      "Packing the next day’s lunch right after dinner while the kitchen is already in use",
+      "Keeping snacks like fruit, nuts, low-fat yogurt, and cut veggies on hand"
+    ]
+  },
+  {
+    "topic": "food_categories",
+    "description": "Organizing foods into categories makes building balanced meals much easier. Protein foods help build and maintain muscle and keep you feeling satisfied. Carbohydrate foods provide energy for your brain, workouts, and daily activities. Fat foods support hormones, brain function, and help you stay full. Picking at least one food from each category at most meals is a simple way to create balanced plates that support your fitness goals.",
+    "key_points": [
+      "Include a protein source in most meals to support muscle and fullness",
+      "Use carbohydrate sources to fuel workouts and daily movement",
+      "Add healthy fat sources to support hormones and long-lasting fullness",
+      "Mix and match options from all three categories for balanced meals",
+      "Choose mostly minimally processed foods most of the time"
+    ],
+    "examples": [],
+    "foods": {
+      "protein_sources": [
+        "Chicken breast",
+        "Turkey",
+        "Eggs and egg whites",
+        "Greek yogurt",
+        "Cottage cheese",
+        "Tofu",
+        "Tempeh",
+        "Lentils",
+        "Beans (black beans, kidney beans, chickpeas)",
+        "Fish (salmon, tuna, cod)",
+        "Lean beef or pork",
+        "Protein powder (whey or plant-based)"
+      ],
+      "carb_sources": [
+        "Oats",
+        "Rice (white, brown, jasmine, basmati)",
+        "Quinoa",
+        "Whole grain bread",
+        "Whole grain wraps or tortillas",
+        "Potatoes",
+        "Sweet potatoes",
+        "Pasta",
+        "Fruit (bananas, apples, berries, oranges)",
+        "Beans and lentils",
+        "Low-fat milk or fortified plant milks",
+        "Starchy vegetables like corn and peas"
+      ],
+      "fat_sources": [
+        "Avocado",
+        "Olive oil",
+        "Olives",
+        "Nuts (almonds, walnuts, cashews, pistachios)",
+        "Nut butters (peanut butter, almond butter)",
+        "Seeds (chia, flax, pumpkin, sunflower)",
+        "Fatty fish (salmon, mackerel, sardines)",
+        "Whole eggs",
+        "Coconut and coconut milk",
+        "Cheese in moderate amounts",
+        "Tahini and other seed-based spreads"
+      ]
+    }
+  },
+  {
+    "topic": "cutting_strategy",
+    "description": "A cutting strategy is a nutrition approach designed to reduce body fat while keeping as much muscle mass, strength, and training performance as possible. The main idea is to create a moderate calorie deficit rather than a harsh one. Most people do better when the deficit is small enough to allow consistent training, good sleep, and manageable hunger. Protein becomes especially important during a cut because it helps preserve lean mass, supports recovery, and improves fullness. Resistance training should stay in place, because muscle is more likely to be maintained when the body still receives a reason to keep it. Food quality matters too: meals built around lean protein, vegetables, fruit, whole grains, legumes, and healthy fats usually make a deficit easier to sustain than highly processed foods. Progress should be judged over weeks, not days, using body weight trends, gym performance, measurements, and photos. If energy, mood, and strength are crashing, the cut is usually too aggressive. A good cutting phase is patient, structured, and realistic rather than extreme.",
+    "key_points": [
+      "Use a moderate calorie deficit instead of a crash diet",
+      "Keep protein high to help preserve muscle during fat loss",
+      "Continue resistance training to signal the body to keep lean mass",
+      "Choose filling foods like lean protein, vegetables, fruit, and high-fiber carbs",
+      "Track weekly trends in weight, performance, and measurements instead of daily fluctuations",
+      "Aggressive deficits increase fatigue, hunger, and risk of muscle loss"
+    ],
+    "examples": [
+      "Reducing daily intake by about 300 to 500 calories instead of cutting food drastically",
+      "Eating protein at each meal from foods like chicken, eggs, Greek yogurt, tuna, tofu, or lentils",
+      "Keeping 3 to 5 lifting sessions per week while using cardio only as a support tool",
+      "Building meals around salad, vegetables, potatoes, rice, and lean meat to stay fuller on fewer calories"
+    ]
+  },
+  {
+    "topic": "bulking_strategy",
+    "description": "A bulking strategy is used to support muscle gain by eating slightly more calories than the body burns while continuing progressive training. The goal is not simply to gain weight, but to create conditions that make muscle growth easier. A controlled calorie surplus usually works better than an uncontrolled one because it limits unnecessary fat gain and keeps the bulk easier to manage. Protein remains important, but carbohydrates are also very helpful because they support harder training, better recovery, and higher gym performance. Fats should stay adequate for hormones and health, but they do not need to dominate the plan. The common idea of a “dirty bulk” means eating anything in large amounts just to gain scale weight fast. That approach can increase body fat quickly and make later cutting phases harder. A “clean bulk” does not mean only perfect foods; it means most calories come from nutritious, easy-to-digest foods with room for some flexibility. Progress should be slow and steady, with body weight, strength, appetite, and recovery reviewed regularly. The best bulk is one that improves training and builds muscle without turning into unnecessary overeating.",
+    "key_points": [
+      "Use a small calorie surplus to support muscle gain with less fat gain",
+      "Prioritize progressive strength training during a bulk",
+      "Keep protein sufficient and increase carbs to support performance and recovery",
+      "A clean bulk emphasizes quality foods, while a dirty bulk often adds body fat too quickly",
+      "Monitor weekly body weight and gym performance to judge whether the surplus is appropriate",
+      "Gaining too fast usually means a larger share of the gain is fat, not muscle"
+    ],
+    "examples": [
+      "Adding 200 to 300 calories per day above maintenance and checking weight gain over 2 to 3 weeks",
+      "Increasing rice, oats, pasta, bread, potatoes, and fruit around workouts for extra energy",
+      "Using calorie-dense but useful foods such as peanut butter, olive oil, nuts, and granola when appetite is low",
+      "Avoiding the mistake of relying mostly on fast food and dessert just to move the scale up faster"
+    ]
+  },
+  {
+    "topic": "macro_ratios_by_goal",
+    "description": "Macro ratios by goal give you a practical way to organize protein, carbohydrates, and fats depending on whether you want to cut, bulk, or maintain. There is no single perfect split for everyone, but good ranges can make planning easier. During a cut, protein is often set relatively high to support muscle retention and fullness, while carbs and fats are adjusted based on preferences, training demands, and total calories. During a bulk, protein can stay solid but does not need to increase endlessly; extra carbohydrates are often very useful because they improve training quality and recovery. At maintenance, the goal is usually balance and consistency, using enough protein to support body composition and enough carbs and fats to feel good and train well. Macro planning works best when protein is treated as the anchor, then fats are kept at a healthy minimum, and the remaining calories are often given to carbs. People doing hard endurance training may need more carbohydrates than someone lifting a few times per week. Example numbers are just starting points, and results should always be adjusted from real progress, hunger, recovery, and energy.",
+    "key_points": [
+      "Protein is usually the most important macro to set first across all goals",
+      "Cutting often uses higher protein and controlled calories to reduce muscle loss",
+      "Bulking usually benefits from more carbohydrates to support harder training",
+      "Maintenance macros should support stable body weight, energy, and recovery",
+      "Macro ratios are starting points and should be adjusted based on real outcomes",
+      "Training style, body size, and food preferences affect the best split"
+    ],
+    "examples": [
+      "Cutting example: 2000 calories with 160 g protein, 200 g carbs, and 58 g fat",
+      "Bulking example: 2800 calories with 170 g protein, 350 g carbs, and 76 g fat",
+      "Maintenance example: 2400 calories with 160 g protein, 275 g carbs, and 71 g fat",
+      "A higher-cardio athlete keeping fats moderate and pushing carbs up to fuel performance"
+    ]
+  },
+  {
+    "topic": "intermittent_fasting",
+    "description": "Intermittent fasting is an eating pattern that organizes when you eat rather than strictly telling you what to eat. One of the most common versions is 16:8, where a person fasts for about 16 hours and eats within an 8-hour window. Other approaches include 14:10, one or two lower-calorie days per week, or shorter daily eating windows. For some people, fasting helps reduce mindless snacking and makes calorie control easier because there are fewer opportunities to eat. For others, it can increase hunger, reduce training energy, or lead to overeating later in the day. Fasting is not magically better for fat loss than any other method when calories and protein are equal, but it can be useful if it fits lifestyle and appetite patterns. It may suit people who prefer larger meals, do not like breakfast, or have a busy morning schedule. It may be a poor fit for people with a history of disordered eating, those who become dizzy or irritable when they do not eat, some athletes with very high training volume, and people who need frequent meals for medical reasons. The best fasting plan is the one that still allows enough calories, enough protein, and consistent training recovery.",
+    "key_points": [
+      "Intermittent fasting changes meal timing, not the basic rules of calories and macros",
+      "The 16:8 method is common, but other meal-window protocols also exist",
+      "It can help some people control calories by reducing snacking opportunities",
+      "It may hurt energy, training quality, or adherence for others",
+      "Fasting is not automatically superior for fat loss when total intake is matched",
+      "It is not ideal for everyone, especially those with poor appetite control or disordered eating history"
+    ],
+    "examples": [
+      "Skipping breakfast and eating lunch at 12 PM, snack at 4 PM, and dinner at 7 PM in a 16:8 setup",
+      "Using a 14:10 schedule as a gentler starting point instead of jumping straight into 16:8",
+      "Avoiding hard morning workouts in a fasted state if performance drops badly",
+      "Choosing not to use fasting during a muscle-gain phase when frequent meals are easier"
+    ]
+  },
+  {
+    "topic": "nutrition_for_beginners",
+    "description": "Nutrition for beginners should focus on simple habits that are easy to repeat, not perfect plans that feel impossible after a few days. The biggest beginner mistake is usually trying to change everything at once: cutting all favorite foods, tracking every gram immediately, and expecting dramatic progress in one week. A much better start is to learn a few basics: understand calories, make protein a priority, eat more fruits and vegetables, and build meals that are consistent from day to day. Tracking food can be very useful, but beginners do not need to become obsessive. Even logging a few normal days can teach you where your calories, protein, and snack habits are coming from. Another common mistake is underestimating portions, drinks, sauces, and small snacks. Keeping meals simple often works best: one protein source, one carb source, some vegetables or fruit, and some healthy fat. Repeating easy breakfasts and lunches can reduce decision fatigue. The goal at the start is not to be advanced; it is to become consistent enough that your nutrition supports training and daily life. Once basic habits are stable, more detailed adjustments become much easier and more effective.",
+    "key_points": [
+      "Beginners should focus on a few repeatable habits instead of extreme rules",
+      "Protein, calories, and consistency matter more than fancy meal plans",
+      "Tracking can teach awareness, but it does not need to become obsessive",
+      "Simple meals are easier to sustain than highly complicated recipes",
+      "Many beginners forget to count drinks, oils, sauces, and small snacks",
+      "Progress comes from consistency over weeks and months, not one perfect day"
+    ],
+    "examples": [
+      "Starting by tracking food intake for 3 to 5 days just to learn current habits",
+      "Building each meal around chicken, eggs, yogurt, beans, tofu, or fish for protein",
+      "Using the same breakfast on most weekdays to simplify decision making",
+      "Replacing random snacks with fruit, yogurt, popcorn, or a protein-rich option"
+    ]
+  },
+  {
+    "topic": "fiber_and_micronutrients",
+    "description": "Fiber and micronutrients are often overlooked when people focus only on protein and calories, but they play a huge role in health, digestion, recovery, and long-term performance. Fiber supports digestion, helps manage hunger, improves blood sugar control, and can make a fat-loss phase easier because high-fiber foods are often more filling. Vegetables, fruits, legumes, whole grains, nuts, and seeds all contribute fiber and important vitamins and minerals. Micronutrients do not provide calories, but they help your body do the work that matters: oxygen transport, nerve signaling, immune function, bone health, muscle contraction, and energy production. Athletes especially need to pay attention to nutrients such as iron, calcium, vitamin D, magnesium, potassium, sodium, zinc, and B vitamins, because low intake can affect performance and recovery. Eating more vegetables is not just a “healthy eating” cliché; it is one of the easiest ways to improve meal quality and nutrient density. Most people do best when they include different colors and types of produce across the week instead of relying on one or two foods. A strong nutrition plan is not only about hitting macros; it is also about supporting the body with enough fiber and a broad range of micronutrients.",
+    "key_points": [
+      "Fiber helps digestion, fullness, and blood sugar control",
+      "Vegetables, fruits, legumes, and whole grains are major sources of fiber and micronutrients",
+      "Athletes should pay attention to iron, calcium, vitamin D, magnesium, potassium, and B vitamins",
+      "Low micronutrient intake can hurt performance, recovery, and general health",
+      "Eating a variety of colorful plant foods improves nutrient coverage",
+      "Macros matter, but food quality and nutrient density matter too"
+    ],
+    "examples": [
+      "Aiming for around 25 to 38 grams of fiber per day depending on size and food tolerance",
+      "Adding berries to yogurt, spinach to eggs, and vegetables to rice bowls for easy fiber increases",
+      "Using beans, lentils, oats, and whole grain bread to support both fiber and carb intake",
+      "Including foods rich in iron and vitamin C together, such as lentils with tomatoes or beef with peppers"
+    ]
+  },
+  {
+    "topic": "budget_nutrition",
+    "description": "Budget nutrition means eating in a way that supports your goals without spending more money than necessary. Good nutrition does not require expensive “fitness” foods, supplements, or trendy snacks. In fact, many of the most useful foods for muscle gain, fat loss, and general health are some of the cheapest: eggs, oats, rice, potatoes, beans, lentils, frozen vegetables, canned tuna, yogurt, milk, peanut butter, and chicken bought in larger packs when available. The key is to plan around cost-effective staple foods and repeat meals that use overlapping ingredients. Meal prep becomes especially helpful on a budget because it reduces waste, cuts back on last-minute takeout, and makes better use of bulk purchases. Frozen and canned foods can be very practical, not inferior, especially when fresh options are expensive. Shopping with a list, comparing price per kilogram, and choosing store brands can make a big difference over time. Budget nutrition is not about eating badly to save money; it is about getting enough protein, enough calories, and enough nutrient-dense foods in a smart and realistic way. A simple plan that fits your money is far more effective than a perfect plan you cannot afford to follow.",
+    "key_points": [
+      "Eating well does not require expensive specialty foods",
+      "Staples like rice, oats, eggs, beans, potatoes, and frozen vegetables are budget-friendly and useful",
+      "Meal prep helps reduce waste and lowers the need for takeout",
+      "Buying in bulk and comparing price per unit can save money",
+      "Frozen and canned foods are practical tools, not low-quality failures",
+      "A sustainable nutrition plan must fit both your goals and your budget"
+    ],
+    "examples": [
+      "Making large batches of rice, lentils, and chicken for several meals at once",
+      "Using canned tuna, eggs, or Greek yogurt as lower-cost protein options",
+      "Buying frozen vegetables instead of letting fresh vegetables spoil in the fridge",
+      "Choosing oats with milk and peanut butter as a cheap, filling breakfast"
+    ]
+  },
+  {
+    "topic": "nutrition_for_cardio_vs_strength",
+    "description": "Nutrition for cardio and strength training overlaps in the basics, but the balance of calories and macros may shift depending on what kind of training dominates your week. Strength-focused athletes often prioritize protein and enough total calories to recover, build muscle, and keep gym performance high. Carbohydrates are still very useful, especially around hard sessions, because they help support volume, intensity, and recovery between workouts. Cardio-focused athletes, especially those doing longer or more frequent sessions, usually have a greater immediate need for carbohydrates because glycogen use is higher. They may also need to pay more attention to hydration and electrolytes, particularly in hot conditions or long sessions. Protein remains important for both groups because it supports muscle repair and helps maintain lean mass. Someone doing mixed training needs a balanced approach that reflects the total workload. A heavy endurance block often means carbs should go up, while a hypertrophy or strength phase may increase protein emphasis and total calories. The best approach is to match food intake to training demands, not copy a generic macro split that ignores what your body is actually being asked to do.",
+    "key_points": [
+      "Both cardio and strength athletes need enough total calories and protein",
+      "Cardio-heavy training usually increases carbohydrate needs more noticeably",
+      "Strength-focused training still benefits from carbs for performance and recovery",
+      "Hydration and electrolytes matter more as endurance volume and sweat losses increase",
+      "Nutrition should be adjusted based on the dominant training stress",
+      "Mixed-training athletes need a flexible approach rather than extreme macro rules"
+    ],
+    "examples": [
+      "A runner increasing carbs before long sessions and after hard interval days",
+      "A lifter keeping protein high and using carbs around workouts to support training volume",
+      "A hybrid athlete eating more on long-run and leg-day combinations than on full rest days",
+      "Adding sodium and fluids during long cardio sessions in hot weather"
+    ]
+  },
+  {
+    "topic": "alcohol_and_fitness",
+    "description": "Alcohol and fitness do not mix especially well, but the issue is not that one drink instantly ruins progress. The real problem is how alcohol can interfere with recovery, sleep quality, appetite control, decision making, hydration, and overall consistency. Heavy drinking may reduce training performance the next day, worsen dehydration, and make it harder to hit protein and calorie targets in a useful way. It can also increase the likelihood of overeating, late-night snacking, and poor food choices because judgment and hunger regulation become weaker. For people focused on muscle gain, large amounts of alcohol are not helpful because they can negatively affect recovery processes and reduce the quality of training. For fat loss, alcohol adds calories quickly without much fullness and often brings extra food with it. That said, many people can include alcohol occasionally without destroying results if they are realistic and controlled. Harm reduction matters: keep intake moderate, avoid binge drinking, stay hydrated, plan food choices in advance, and accept that frequent heavy drinking is not compatible with high-level body composition goals. Fitness is built by habits, and alcohol becomes a bigger problem when it repeatedly disrupts those habits.",
+    "key_points": [
+      "Alcohol can hurt recovery, hydration, sleep quality, and next-day training performance",
+      "It adds calories quickly without much satiety",
+      "Drinking often leads to poorer food choices and overeating",
+      "Frequent heavy drinking is not compatible with optimal muscle gain or fat loss",
+      "Occasional moderate intake is easier to manage than binge drinking",
+      "Practical harm reduction can limit damage even if alcohol is not ideal"
+    ],
+    "examples": [
+      "Limiting yourself to a small number of drinks instead of drinking until appetite and judgment drop",
+      "Drinking water between alcoholic drinks to reduce dehydration",
+      "Eating a protein-rich meal before going out so you are less likely to binge on fast food later",
+      "Avoiding scheduling your hardest training session the morning after a social event with alcohol"
+    ]
+  },
+  {
+    "topic": "sleep_and_nutrition",
+    "description": "Sleep and nutrition affect each other in powerful ways. Poor sleep can increase hunger, reduce fullness, worsen cravings, and make it much harder to stay consistent with a plan. When people are underslept, they often feel more drawn to calorie-dense foods, snack more, and have less patience for meal prep or training. Sleep is also a major part of muscle recovery, performance, mood, and stress management. Even a well-designed diet becomes harder to follow when sleep is regularly poor. On the nutrition side, what and when you eat can also influence sleep quality. Very heavy meals right before bed may feel uncomfortable for some people, while going to sleep extremely hungry can also disturb sleep. A light meal or snack with protein and some carbs before bed works well for many people, especially if it helps them meet daily intake and feel relaxed. Caffeine timing matters too; many people struggle with sleep because stimulants are used too late in the day. Good body composition and recovery results usually come from the combination of solid training, consistent nutrition, and enough sleep, not from trying to separate them.",
+    "key_points": [
+      "Poor sleep can increase hunger, cravings, and overeating",
+      "Sleep is essential for muscle recovery, mood, and training performance",
+      "Going to bed either too full or too hungry can reduce sleep quality for some people",
+      "A balanced pre-bed snack can support recovery and appetite control",
+      "Late caffeine intake often harms sleep more than people expect",
+      "Good results depend on sleep and nutrition working together"
+    ],
+    "examples": [
+      "Having Greek yogurt with fruit or milk with oats before bed if hunger makes sleep difficult",
+      "Avoiding large greasy meals right before sleep when they cause discomfort",
+      "Stopping caffeine earlier in the day instead of relying on energy drinks at night",
+      "Planning nutritious meals ahead because sleep-deprived days often lead to impulsive eating"
+    ]
+  },
+  {
+    "topic": "protein_timing_and_distribution",
+    "description": "Protein timing and distribution refer to how you spread protein intake across the day instead of eating most of it in only one meal. Total daily protein is still the biggest factor, but meal distribution can make it easier to support muscle protein synthesis repeatedly through the day. Many people do well with several meals that each contain a meaningful amount of protein rather than one huge serving at night and almost none earlier. This is especially helpful for people trying to build muscle, recover from frequent training, or protect muscle during a cut. Protein quality matters too, because sources that contain enough essential amino acids and leucine tend to stimulate muscle-building processes more effectively. The leucine threshold is not a rule that needs to make you obsessive, but it helps explain why very tiny protein servings may be less useful than full portions. A practical approach is to include protein at breakfast, lunch, dinner, and possibly one snack. This also helps with fullness and more stable eating habits. Post-workout protein can be useful, but it works best when it is part of a full day of adequate protein rather than treated as the only meal that matters.",
+    "key_points": [
+      "Total daily protein matters most, but distribution across meals is also helpful",
+      "Several solid protein servings per day are usually better than one very large serving",
+      "Protein quality and leucine content affect how strongly a meal supports muscle protein synthesis",
+      "Breakfast is a common meal where people under-eat protein",
+      "Post-workout protein helps, but it does not replace meeting the daily target",
+      "Even distribution can improve both recovery and fullness"
+    ],
+    "examples": [
+      "Eating eggs or Greek yogurt at breakfast instead of having almost no protein early in the day",
+      "Including 25 to 40 grams of protein in 3 to 5 meals depending on body size and needs",
+      "Using whey protein after training when a full meal is not convenient",
+      "Adding cottage cheese, milk, or yogurt before bed to increase total daily protein"
+    ]
+  },
+  {
+    "topic": "eating_out_and_social_eating",
+    "description": "Eating out and social eating are normal parts of life, and a good nutrition plan should be flexible enough to handle them. Many people fail not because of one restaurant meal, but because they think one meal “ruined everything” and then give up for the rest of the day or weekend. A better approach is to make smart choices without trying to be perfect. Looking at the menu ahead of time, choosing a protein-centered meal, and being aware of hidden calories in sauces, fried sides, desserts, and drinks can make a big difference. Social eating also includes holidays, family meals, and events where exact tracking is hard. In those cases, portion awareness and overall structure matter more than precision. You do not need to avoid restaurants to make progress; you need a strategy that lets you enjoy the situation while still protecting your goals most of the time. Sometimes that means ordering grilled instead of fried, choosing water over sugary drinks, or stopping when comfortably full instead of eating because food is still on the table. Long-term success depends on learning how to stay mostly on track in real life, not only in ideal meal-prep conditions.",
+    "key_points": [
+      "One restaurant meal does not ruin progress, but repeated overdoing can slow results",
+      "Checking the menu ahead of time helps you make calmer and better choices",
+      "Protein-centered meals are usually easier to fit into fitness goals",
+      "Sauces, drinks, appetizers, and desserts often add more calories than expected",
+      "Portion awareness matters when exact tracking is not possible",
+      "Social flexibility is part of a sustainable nutrition plan"
+    ],
+    "examples": [
+      "Choosing grilled chicken, rice, and vegetables instead of a heavily fried meal",
+      "Asking for dressing or sauce on the side to control intake more easily",
+      "Having a lighter earlier meal if you know a large dinner out is planned",
+      "Focusing on conversation and company instead of treating the event like a cheat-day challenge"
+    ]
+  },
+  {
+    "topic": "deload_week_nutrition",
+    "description": "Deload week nutrition should support recovery without becoming an excuse to eat randomly just because training volume is lower. During a deload or rest week, your body is still repairing tissue, reducing accumulated fatigue, and preparing for the next productive phase of training. For that reason, protein should generally stay high and food quality should remain strong. Calories may stay the same for some people, especially if daily activity remains normal and the deload is short. Others may slightly reduce calories, usually by trimming some carbohydrates or fats, if training volume drops a lot and appetite is lower. The mistake is cutting food too aggressively during a deload, because this can interfere with recovery and leave you feeling flat when harder training returns. Carbohydrates are still useful even in a lighter week because they help recovery, mood, and replenishment. Hydration, micronutrients, and regular meals remain important. A deload is not wasted time; it is part of training progress. Nutrition during that week should match the recovery goal by keeping the body well supported rather than underfed or treated as if results only matter during hard weeks.",
+    "key_points": [
+      "Keep protein high during a deload to support muscle repair and recovery",
+      "Calories do not always need a large reduction during a lighter training week",
+      "If intake is adjusted, small changes are usually better than aggressive cuts",
+      "Carbohydrates still help recovery even when volume is lower",
+      "Hydration and micronutrient intake remain important during rest and recovery phases",
+      "A deload supports progress, so nutrition should support the deload"
+    ],
+    "examples": [
+      "Keeping protein intake the same while slightly reducing carbs if total training volume drops a lot",
+      "Maintaining maintenance calories during a one-week deload because recovery is the priority",
+      "Continuing to eat balanced meals instead of using the week as an excuse for random overeating",
+      "Using the extra time in a lighter week to prep food and improve routine before the next block"
+    ]
+  }
+]

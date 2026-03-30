@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Coach Chat</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .app {
+      width: min(900px, 95vw);
+      height: min(90vh, 800px);
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      padding: 18px 22px;
+      background: #b784a7; /* mauve */
+      color: white;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .header p {
+      margin: 6px 0 0;
+      font-size: 13px;
+      opacity: 0.95;
+    }
+    .messages {
+      flex: 1;
+      padding: 18px;
+      overflow-y: auto;
+      background: linear-gradient(to bottom, #faf6f9, #f4f7fb);
+    }
+    .message {
+      max-width: 78%;
+      margin-bottom: 14px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      line-height: 1.5;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+    .user {
+      margin-left: auto;
+      background: #b784a7; /* mauve */
+      color: white;
+      border-bottom-right-radius: 6px;
+    }
+    .bot {
+      margin-right: auto;
+      background: #f8f3f7;
+      color: #222;
+      border: 1px solid #e6d8e2;
+      border-bottom-left-radius: 6px;
+    }
+    .bot p, .bot ul, .bot ol { margin: 0 0 8px; }
+    .bot p:last-child, .bot ul:last-child, .bot ol:last-child { margin-bottom: 0; }
+    .bot code {
+      background: #efe3ea;
+      padding: 2px 5px;
+      border-radius: 6px;
+    }
+    .input-bar {
+      display: flex;
+      gap: 10px;
+      padding: 14px;
+      border-top: 1px solid #e5eaf2;
+      background: #fff;
+    }
+    textarea {
+      flex: 1;
+      resize: none;
+      border: 1px solid #cfd8e3;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 15px;
+      min-height: 52px;
+      max-height: 120px;
+      outline: none;
+    }
+    textarea:focus {
+      border-color: #b784a7;
+      box-shadow: 0 0 0 3px rgba(183,132,167,0.2);
+    }
+    button {
+      border: none;
+      background: #b784a7;
+      color: white;
+      padding: 0 18px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #9c6a8e; }
+    button:disabled {
+      background: #d6b9cb;
+      cursor: not-allowed;
+    }
+    .hint {
+      padding: 0 16px 12px;
+      font-size: 12px;
+      color: #5b6573;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>Fitness Coach Chat</h1>
+      <p>Connected to your local API at <strong>http://127.0.0.1:8000/chat</strong></p>
+    </div>
+
+    <div class="messages" id="messages">
+      <div class="message bot">
+        <p><strong>Welcome!</strong> Ask about exercises, nutrition, or workout plans.</p>
+        <p>Examples:</p>
+        <ul>
+          <li>Give me chest exercises with dumbbells</li>
+          <li>What should I eat before a workout?</li>
+          <li>Build me a 3-day beginner full body plan</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="input-bar">
+      <textarea id="input" placeholder="Type your message here..."></textarea>
+      <button id="sendBtn">Send</button>
+    </div>
+    <div class="hint">Press Enter to send. Use Shift + Enter for a new line.</div>
+  </div>
+
+  <script>
+    const messages = document.getElementById('messages');
+    const input = document.getElementById('input');
+    const sendBtn = document.getElementById('sendBtn');
+
+    function addMessage(content, sender, isMarkdown = false) {
+      const div = document.createElement('div');
+      div.className = `message ${sender}`;
+      if (isMarkdown) {
+        div.innerHTML = marked.parse(content || '');
+      } else {
+        div.textContent = content;
+      }
+      messages.appendChild(div);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const text = input.value.trim();
+      if (!text) return;
+
+      addMessage(text, 'user');
+      input.value = '';
+      sendBtn.disabled = true;
+
+      const loading = document.createElement('div');
+      loading.className = 'message bot';
+      loading.textContent = 'Typing...';
+      messages.appendChild(loading);
+      messages.scrollTop = messages.scrollHeight;
+
+      try {
+        const response = await fetch('http://127.0.0.1:8000/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text })
+        });
+
+        const data = await response.json();
+        loading.remove();
+
+        const botText = data.response || data.answer || data.message || 'No response received.';
+        addMessage(botText, 'bot', true);
+      } catch (error) {
+        loading.remove();
+        addMessage('Could not connect to the API. Make sure your FastAPI app is running.', 'bot');
+      } finally {
+        sendBtn.disabled = false;
+        input.focus();
+      }
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>

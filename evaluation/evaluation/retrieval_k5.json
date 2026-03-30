@@ -1,0 +1,131 @@
+{
+  "summary": {
+    "k": 5,
+    "questions_evaluated": 7,
+    "note": "Retrieval evaluated on nutrition questions only. Exercise and program builder use direct JSON filtering (no Qdrant).",
+    "mean_precision@5": 0.3714,
+    "mean_recall@5": 0.3714,
+    "MRR": 0.8857
+  },
+  "per_question": [
+    {
+      "id": 8,
+      "question": "How much protein should I eat per day to build muscle?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 1,
+      "precision@5": 0.2,
+      "recall@5": 0.2,
+      "reciprocal_rank": 0.2,
+      "top_topics_retrieved": [
+        "protein_timing_and_distribution",
+        "meal_timing",
+        "supplements",
+        "macro_ratios_by_goal",
+        "macros"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What should I eat before a workout?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 2,
+      "precision@5": 0.4,
+      "recall@5": 0.4,
+      "reciprocal_rank": 1.0,
+      "top_topics_retrieved": [
+        "pre_workout_nutrition",
+        "post_workout_nutrition",
+        "meal_timing",
+        "macros",
+        "meal_prep_tips"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What should I eat after a workout?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 2,
+      "precision@5": 0.4,
+      "recall@5": 0.4,
+      "reciprocal_rank": 1.0,
+      "top_topics_retrieved": [
+        "post_workout_nutrition",
+        "pre_workout_nutrition",
+        "meal_timing",
+        "macros",
+        "food_categories"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "How much water should I drink during training?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 2,
+      "precision@5": 0.4,
+      "recall@5": 0.4,
+      "reciprocal_rank": 1.0,
+      "top_topics_retrieved": [
+        "hydration",
+        "pre_workout_nutrition",
+        "post_workout_nutrition",
+        "nutrition_for_cardio_vs_strength",
+        "alcohol_and_fitness"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "What are the best supplements for strength training?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 2,
+      "precision@5": 0.4,
+      "recall@5": 0.4,
+      "reciprocal_rank": 1.0,
+      "top_topics_retrieved": [
+        "supplements",
+        "nutrition_for_cardio_vs_strength",
+        "food_categories",
+        "fiber_and_micronutrients",
+        "post_workout_nutrition"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "How do I calculate my daily calorie intake for fat loss?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 3,
+      "precision@5": 0.6,
+      "recall@5": 0.6,
+      "reciprocal_rank": 1.0,
+      "top_topics_retrieved": [
+        "calorie_calculations",
+        "cutting_strategy",
+        "nutrition_for_beginners",
+        "macros",
+        "intermittent_fasting"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "What are good high-protein meal prep ideas?",
+      "source_type": "nutrition",
+      "retrieved": 5,
+      "relevant_retrieved": 1,
+      "precision@5": 0.2,
+      "recall@5": 0.2,
+      "reciprocal_rank": 1.0,
+      "top_topics_retrieved": [
+        "meal_prep_tips",
+        "pre_workout_nutrition",
+        "meal_timing",
+        "protein_timing_and_distribution",
+        "food_categories"
+      ]
+    }
+  ]
+}
